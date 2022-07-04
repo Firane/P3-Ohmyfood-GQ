@@ -1,7 +1,11 @@
 @mixin font-secondary {
-    font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
 }
 
 @mixin font-weight-lighter {
-    font-weight: 300;
+  font-weight: 300;
+}
+
+@mixin font-weight-bold {
+  font-weight: 700;
 }
