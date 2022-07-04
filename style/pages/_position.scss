@@ -1,5 +1,6 @@
 @import "../Utils/variables";
 @import "../Base/normalize";
+@import "../Utils/mixins";
 
 .position {
     background: $color-background-position;
@@ -10,5 +11,6 @@
         padding-bottom: .7rem;
         gap: 1rem;
         font-weight: 500;
+        @include font-secondary;
     }
 }
