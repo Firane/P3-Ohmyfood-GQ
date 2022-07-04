@@ -3,13 +3,13 @@
 @import "../Utils/mixins";
 
 .position {
-  background: $color-background-position;
-  &__container {
-    display: flex;
-    justify-content: center;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    gap: 1rem;
-    font-weight: 500;
-  }
+     background: $color-background-position;
+     &__container {
+          display: flex;
+          justify-content: center;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;
+          gap: 1rem;
+          font-weight: 500;
+     }
 }

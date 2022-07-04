@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/styles.css" />
-    <link rel="stylesheet" href="./style/normalize.css" />
-    <script
-      src="https://kit.fontawesome.com/caa96f4471.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Ohmyfood - Accueil</title>
-  </head>
-  <body>
-    <header>
-      <img
-        src="./images/logo/ohmyfood_resized_header.png"
-        alt="Logo de Ohmyfood"
-      />
-    </header>
-    <div class="position">
-      <div class="position__container">
-        <i class="fa-solid fa-location-dot"></i>
-        <div>Paris, Bellevile</div>
-      </div>
-    </div>
-    <section class="exploration">
-      <h1 class="exploration__title">Réservez le menu qui vous convient</h1>
-      <p class="exploration__description">
-        Découvrez des restaurants d'exception, séléctionnés par nos soins.
-      </p>
-      <button class="exploration__button">
-        <a href="www.google.com">Explorer nos restaurants</a>
-      </button>
-    </section>
-  </body>
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="stylesheet" href="./style/styles.css" />
+          <link rel="stylesheet" href="./style/normalize.css" />
+          <script src="https://kit.fontawesome.com/caa96f4471.js" crossorigin="anonymous"></script>
+          <title>Ohmyfood - Accueil</title>
+     </head>
+
+     <body>
+          <header>
+               <img src="./images/logo/ohmyfood_resized_header.png" alt="Logo de Ohmyfood" />
+          </header>
+          <div class="position">
+               <div class="position__container">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>Paris, Bellevile</div>
+               </div>
+          </div>
+          <section class="exploration">
+               <h1 class="exploration__title">Réservez le menu qui vous convient</h1>
+               <p class="exploration__description">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+               <button class="exploration__button">
+                    <a href="www.google.com">Explorer nos restaurants</a>
+               </button>
+          </section>
+
+          <section class="fonctionnement">
+               <h2>Fonctionnement</h2>
+               <article id="fonctionnement__pick">
+                    <div fonctionnement__step__number>1</div>
+                    <i class="fa-solid fa-mobile-screen-button fonctionnement__icon"></i>
+                    <p>Choisissez un restaurant</p>
+               </article>
+               <article id="fonctionnement__pick">
+                    <div fonctionnement__step__number>2</div>
+                    <i class="fa-solid fa-list fonctionnement__icon"></i>
+                    <p>Composez votre menu</p>
+               </article>
+               <article id="fonctionnement__pick">
+                    <div fonctionnement__step__number>3</div>
+                    <i class="fa-duotone fa-store fonctionnement__icon"></i>
+                    <p>Dégustez au restaurant</p>
+               </article>
+          </section>
+     </body>
 </html>

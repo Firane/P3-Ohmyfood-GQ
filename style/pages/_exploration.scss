@@ -3,44 +3,45 @@
 @import "../Utils/mixins";
 
 .exploration {
-  background: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
-  a {
-    color: white;
-    border-radius: 30px;
-    padding: 1rem;
-    border-radius: 30px;
-    text-decoration: none;
-    box-shadow: none;
-    font-size: 1.1rem;
-    color: white;
-    background: linear-gradient(to bottom, $color-secondary, $color-primary);
-    display: block;
-  }
-  &__title {
-    width: 70%;
-    font-size: 1.5rem;
-    text-align: center;
-    @include font-weight-bold;
-  }
-  &__description {
-    text-align: center;
-    font-size: 1.1rem;
-    @include font-weight-lighter;
-  }
-  &__button {
-    display: block;
-    box-shadow: none;
-    border: none;
-    background: none;
-    &:hover {
-      cursor: pointer;
-    }
-  }
+     background: #f6f6f6;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     align-content: center;
+     padding-top: 1rem;
+     padding-bottom: 3rem;
+     a {
+          color: white;
+          border-radius: 30px;
+          padding: 1rem 2rem 1rem 2rem;
+          border-radius: 30px;
+          text-decoration: none;
+          box-shadow: none;
+          font-size: 1rem;
+          color: white;
+          background: linear-gradient(to bottom, $color-secondary, $color-primary);
+          display: block;
+          font-family: "Roboto", sans-serif;
+     }
+     &__title {
+          width: 70%;
+          font-size: 1.5rem;
+          text-align: center;
+          @include font-weight-bold;
+     }
+     &__description {
+          text-align: center;
+          font-size: 1.1rem;
+          @include font-weight-lighter;
+     }
+     &__button {
+          display: block;
+          box-shadow: none;
+          border: none;
+          background: none;
+          &:hover {
+               cursor: pointer;
+          }
+     }
 }
