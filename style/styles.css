@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -91,7 +92,7 @@ h4 {
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 30px;
   text-decoration: none;
-  box-shadow: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
   font-size: 1rem;
   color: white;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
@@ -162,6 +163,7 @@ h4 {
   padding: 0.8rem 0rem 0.8rem 0rem;
   border-radius: 20px;
   font-weight: 700;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
 }
 .fonctionnement__steps:hover {
   background: #9356dc;
@@ -186,4 +188,83 @@ h4 {
 }
 .fonctionnement__steps__text {
   margin-left: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f6f6f6;
+  font-weight: 700;
+}
+.restaurants__list {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  row-gap: 1rem;
+  margin-top: 3rem;
+}
+.restaurants__image {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.restaurants__infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.restaurants__infos--new {
+  margin-top: -30px;
+}
+.restaurants__left__box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.restaurants__main__box {
+  background: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+.restaurants__location {
+  font-weight: 100;
+}
+.restaurants__icons {
+  font-size: 1.3rem;
+}
+.restaurants__new {
+  position: relative;
+  bottom: 170px;
+  left: 260px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #99e2d0;
+  width: 90px;
+  color: #008766;
+  border-radius: 2px;
 }/*# sourceMappingURL=styles.css.map */

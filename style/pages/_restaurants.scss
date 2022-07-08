@@ -1,0 +1,65 @@
+@import "../Utils/variables";
+@import "../Base/normalize";
+@import "../Utils/mixins";
+
+.restaurants {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     background: $background-accueil;
+     @include font-weight-bold;
+     &__list {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          margin: 0 auto;
+          row-gap: 1rem;
+          margin-top: 3rem;
+     }
+     &__image {
+          width: 100%;
+          border-radius: 20px 20px 0px 0px;
+     }
+     &__infos {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+          margin: 0 auto;
+          padding: 0.5rem 0 0.5rem 0;
+          &--new {
+               margin-top: -30px;
+          }
+     }
+     &__left__box {
+          display: flex;
+          flex-direction: column;
+          gap: 0.1rem;
+     }
+     &__main__box {
+          background: white;
+          text-decoration: none;
+          color: black;
+          border-radius: 20px;
+          @include box-shadow-cards;
+     }
+     &__location {
+          @include font-weight-lighter;
+     }
+     &__icons {
+          font-size: 1.3rem;
+     }
+     &__new {
+          position: relative;
+          bottom: 170px;
+          left: 260px;
+          height: 30px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: #99e2d0;
+          width: 90px;
+          color: #008766;
+          border-radius: 2px;
+     }
+}

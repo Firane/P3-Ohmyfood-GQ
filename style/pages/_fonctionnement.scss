@@ -19,13 +19,14 @@
           align-content: center;
           justify-content: flex-start;
           column-gap: 0.5rem;
-          background: #f6f6f6;
+          background: $background-accueil;
           margin-bottom: 2rem;
           font-size: 1.1rem;
           width: 100%;
           padding: 0.8rem 0rem 0.8rem 0rem;
           border-radius: 20px;
           @include font-weight-bold;
+          @include box-shadow-cards;
           &:hover {
                background: $color-primary;
           }
