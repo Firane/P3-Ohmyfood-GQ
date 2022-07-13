@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="stylesheet" href="./style/styles.css" />
+          <link rel="stylesheet" href="./style/normalize.css" />
+          <script src="https://kit.fontawesome.com/caa96f4471.js" crossorigin="anonymous"></script>
+          <title>Ohmyfood - A la Française</title>
+     </head>
+     <body>
+          <header class="header">
+               <a href="#" class="header__arrow"><i class="fa-solid fa-arrow-left"></i></a>
+               <img class="header__img" src="./images/logo/ohmyfood_resized_header.png" alt="Logo de Ohmyfood" />
+          </header>
+          <main>
+               <img class="menu__img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo plat à la française" />
+               <section class="menu">
+                    <div class="menu__box__title__heart">
+                         <h1 class="menu__title">À la française</h1>
+                         <i class="fa-solid fa-heart restaurants__icons"></i>
+                    </div>
+                    <h2 class="menu__steps">Entrées</h2>
+                    <form action="traitement.php" method="post">
+                         <fieldset>
+                              <legend class="menu__steps">Entrées</legend>
+                              <input type="checkbox" name="Tartare__de__poulpe__acidulé" id="Tartare__de__poulpe__acidulé" />
+                              <label for="Tartare__de__poulpe__acidulé">
+                                   <h3 class="menu__title">Tartare de poulpe acidulé</h3>
+                                   <div class="menu__box__ingredients__price">
+                                        <h4 class="menu__ingredients">Aux zests d'orange</h4>
+                                        <div class="menu__price">25€</div>
+                                   </div>
+                              </label>
+                         </fieldset>
+                    </form>
+               </section>
+          </main>
+     </body>
+</html>

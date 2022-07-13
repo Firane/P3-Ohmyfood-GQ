@@ -28,9 +28,6 @@
           width: 90%;
           margin: 0 auto;
           padding: 0.5rem 0 0.5rem 0;
-          &--new {
-               margin-top: -30px;
-          }
      }
      &__left__box {
           display: flex;
@@ -43,6 +40,7 @@
           color: black;
           border-radius: 20px;
           @include box-shadow-cards;
+          position: relative;
      }
      &__location {
           @include font-weight-lighter;
@@ -51,9 +49,9 @@
           font-size: 1.3rem;
      }
      &__new {
-          position: relative;
-          bottom: 170px;
-          left: 260px;
+          position: absolute;
+          top: 20px;
+          right: 20px;
           height: 30px;
           display: inline-flex;
           align-items: center;
@@ -62,5 +60,9 @@
           width: 90px;
           color: #008766;
           border-radius: 2px;
+     }
+     &__links {
+          text-decoration: none;
+          color: black;
      }
 }

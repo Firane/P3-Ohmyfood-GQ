@@ -5,4 +5,13 @@ header {
      padding-top: 1rem;
      padding-bottom: 1rem;
      box-shadow: 0 4px 2px 2px rgb(128, 128, 128, 0.5);
+     position: relative;
+}
+
+.header__arrow {
+     position: absolute;
+     top: 20px;
+     left: 10px;
+     text-decoration: none;
+     color: black;
 }

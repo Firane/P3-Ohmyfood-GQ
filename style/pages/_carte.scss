@@ -1,0 +1,10 @@
+@import "../Utils/mixins";
+@import "../Utils/variables";
+@import "../Layouts/footer";
+@import "../Layouts/header";
+
+.menu {
+     &__img {
+          width: 100%;
+     }
+}

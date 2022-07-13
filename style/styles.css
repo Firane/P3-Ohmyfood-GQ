@@ -20,6 +20,12 @@ h4 {
   padding: 0;
 }
 
+fieldset {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -27,6 +33,15 @@ header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   box-shadow: 0 4px 2px 2px rgba(128, 128, 128, 0.5);
+  position: relative;
+}
+
+.header__arrow {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 * {
@@ -43,6 +58,12 @@ h2,
 h3,
 h4 {
   margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  border: none;
   padding: 0;
 }
 
@@ -76,6 +97,12 @@ h4 {
   padding: 0;
 }
 
+fieldset {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
 .exploration {
   background: #f6f6f6;
   display: flex;
@@ -85,19 +112,6 @@ h4 {
   align-content: center;
   padding-top: 1rem;
   padding-bottom: 3rem;
-}
-.exploration a {
-  color: white;
-  border-radius: 30px;
-  padding: 1rem 2rem 1rem 2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-  font-size: 1rem;
-  color: white;
-  background: linear-gradient(to bottom, #ff79da, #9356dc);
-  display: block;
-  font-family: "Roboto", sans-serif;
 }
 .exploration__title {
   width: 70%;
@@ -115,6 +129,18 @@ h4 {
   box-shadow: none;
   border: none;
   background: none;
+  color: white;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  color: white;
+  border-radius: 30px;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  display: block;
 }
 .exploration__button:hover {
   cursor: pointer;
@@ -134,6 +160,12 @@ h2,
 h3,
 h4 {
   margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  border: none;
   padding: 0;
 }
 
@@ -188,6 +220,10 @@ h4 {
 }
 .fonctionnement__steps__text {
   margin-left: 12px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 * {
@@ -204,6 +240,12 @@ h2,
 h3,
 h4 {
   margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  border: none;
   padding: 0;
 }
 
@@ -235,9 +277,6 @@ h4 {
   margin: 0 auto;
   padding: 0.5rem 0 0.5rem 0;
 }
-.restaurants__infos--new {
-  margin-top: -30px;
-}
 .restaurants__left__box {
   display: flex;
   flex-direction: column;
@@ -249,6 +288,7 @@ h4 {
   color: black;
   border-radius: 20px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
 }
 .restaurants__location {
   font-weight: 100;
@@ -257,9 +297,9 @@ h4 {
   font-size: 1.3rem;
 }
 .restaurants__new {
-  position: relative;
-  bottom: 170px;
-  left: 260px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   height: 30px;
   display: inline-flex;
   align-items: center;
@@ -268,6 +308,10 @@ h4 {
   width: 90px;
   color: #008766;
   border-radius: 2px;
+}
+.restaurants__links {
+  text-decoration: none;
+  color: black;
 }
 
 footer {
@@ -278,6 +322,7 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .footer {
@@ -301,4 +346,60 @@ footer {
   text-decoration: none;
   text-transform: none;
   color: white;
+}
+
+footer {
+  background: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.footer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.footer__title {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-family: "Shrikhand", cursive;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+.footer__icons {
+  width: 25px;
+  height: 20px;
+}
+.footer__links {
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 4px 2px 2px rgba(128, 128, 128, 0.5);
+  position: relative;
+}
+
+.header__arrow {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu__img {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
