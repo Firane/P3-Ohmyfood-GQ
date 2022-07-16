@@ -10,6 +10,7 @@
 
 body {
   margin: 0 auto;
+  max-width: 1500px;
 }
 
 h1,
@@ -35,6 +36,12 @@ header {
   box-shadow: 0 4px 2px 2px rgba(128, 128, 128, 0.5);
   position: relative;
 }
+@media screen and (min-width: 992px) {
+  header {
+    box-shadow: 0 4px 0px 0px rgba(128, 128, 128, 0.5);
+    border: 1px rgba(128, 128, 128, 0.5) solid;
+  }
+}
 
 .header__arrow {
   position: absolute;
@@ -52,6 +59,7 @@ header {
 
 body {
   margin: 0 auto;
+  max-width: 1500px;
 }
 
 h1,
@@ -88,6 +96,7 @@ fieldset {
 
 body {
   margin: 0 auto;
+  max-width: 1500px;
 }
 
 h1,
@@ -113,6 +122,11 @@ fieldset {
   align-content: center;
   padding-top: 1rem;
   padding-bottom: 3rem;
+}
+@media screen and (min-width: 992px) {
+  .exploration {
+    border-radius: 0px 0px 20px 20px;
+  }
 }
 .exploration__title {
   width: 70%;
@@ -154,6 +168,7 @@ fieldset {
 
 body {
   margin: 0 auto;
+  max-width: 1500px;
 }
 
 h1,
@@ -198,8 +213,20 @@ fieldset {
   font-weight: 700;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
 }
+@media screen and (min-width: 992px) {
+  .fonctionnement__steps {
+    width: 28%;
+  }
+}
 .fonctionnement__steps:hover {
   background: #9356dc;
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement__steps__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .fonctionnement__steps__numbers {
   background: #9356dc;
@@ -234,6 +261,7 @@ fieldset {
 
 body {
   margin: 0 auto;
+  max-width: 1500px;
 }
 
 h1,
@@ -257,14 +285,33 @@ fieldset {
   background: #f6f6f6;
   font-weight: 700;
 }
+@media screen and (min-width: 992px) {
+  .restaurants {
+    border-radius: 20px;
+    margin-bottom: 2rem;
+  }
+}
 .restaurants__list {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
   row-gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
+}
+@media screen and (min-width: 992px) {
+  .restaurants__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 3rem;
+  }
+}
+.restaurants__list__title {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
 .restaurants__image {
   width: 100%;
@@ -290,6 +337,11 @@ fieldset {
   border-radius: 20px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
   position: relative;
+}
+@media screen and (min-width: 992px) {
+  .restaurants__main__box {
+    width: 23%;
+  }
 }
 .restaurants__location {
   font-weight: 100;
@@ -391,6 +443,12 @@ header {
   padding-bottom: 1rem;
   box-shadow: 0 4px 2px 2px rgba(128, 128, 128, 0.5);
   position: relative;
+}
+@media screen and (min-width: 992px) {
+  header {
+    box-shadow: 0 4px 0px 0px rgba(128, 128, 128, 0.5);
+    border: 1px rgba(128, 128, 128, 0.5) solid;
+  }
 }
 
 .header__arrow {

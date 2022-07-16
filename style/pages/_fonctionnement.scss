@@ -27,8 +27,18 @@
           border-radius: 20px;
           @include font-weight-bold;
           @include box-shadow-cards;
+          @include desktop {
+               width: 28%;
+          }
           &:hover {
                background: $color-primary;
+          }
+          &__lists {
+               @include desktop {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+               }
           }
           &__numbers {
                background: $color-primary;

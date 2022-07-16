@@ -8,14 +8,29 @@
      justify-content: center;
      background: $background-accueil;
      @include font-weight-bold;
+     @include desktop {
+          border-radius: 20px;
+          margin-bottom: 2rem;
+     }
      &__list {
           display: flex;
           flex-direction: column;
           width: 90%;
           margin: 0 auto;
           row-gap: 1rem;
-          margin-top: 3rem;
+          margin-top: 1rem;
           margin-bottom: 3rem;
+          @include desktop {
+               flex-direction: row;
+               flex-wrap: wrap;
+               justify-content: space-between;
+               row-gap: 3rem;
+          }
+          &__title {
+               width: 90%;
+               margin: 0 auto;
+               margin-top: 3rem;
+          }
      }
      &__image {
           width: 100%;
@@ -41,6 +56,9 @@
           border-radius: 20px;
           @include box-shadow-cards;
           position: relative;
+          @include desktop {
+               width: 23%;
+          }
      }
      &__location {
           @include font-weight-lighter;
