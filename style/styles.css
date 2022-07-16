@@ -468,9 +468,29 @@ header {
   border-radius: 30px 30px 0px 0px;
   padding-bottom: 4rem;
 }
+@media screen and (min-width: 992px) {
+  .menu__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .menu__img {
   width: 100%;
   z-index: 1;
+}
+.menu__img__desktop {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .menu__img__desktop {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu__img__mobile {
+    display: none;
+  }
 }
 .menu__box__title__heart {
   display: flex;
@@ -481,6 +501,13 @@ header {
   align-content: center;
   margin: 0 auto;
   padding: 2rem 0rem 1rem 0rem;
+}
+@media screen and (min-width: 992px) {
+  .menu__box__title__heart {
+    justify-content: center;
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
 }
 .menu__title {
   font-size: 1.7rem;
@@ -528,6 +555,11 @@ header {
   content: "";
   background: #99e2d0;
   margin-top: 0.2rem;
+}
+@media screen and (min-width: 992px) {
+  .menu__steps__content {
+    width: 30%;
+  }
 }
 .menu__dishes {
   width: 95%;

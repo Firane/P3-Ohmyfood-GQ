@@ -10,9 +10,27 @@
      position: relative;
      border-radius: 30px 30px 0px 0px;
      padding-bottom: 4rem;
+     &__content {
+          @include desktop {
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+          }
+     }
      &__img {
           width: 100%;
           z-index: 1;
+          &__desktop {
+               display: none;
+               @include desktop {
+                    display: block;
+               }
+          }
+          &__mobile {
+               @include desktop {
+                    display: none;
+               }
+          }
      }
      &__box__title__heart {
           display: flex;
@@ -23,6 +41,10 @@
           align-content: center;
           margin: 0 auto;
           padding: 2rem 0rem 1rem 0rem;
+          @include desktop {
+               justify-content: center;
+               column-gap: 6rem;
+          }
      }
      &__title {
           font-size: 1.7rem;
@@ -54,6 +76,11 @@
                content: "";
                background: $color-tertiary;
                margin-top: 0.2rem;
+          }
+          &__content {
+               @include desktop {
+                    width: 30%;
+               }
           }
      }
      &__dishes {
