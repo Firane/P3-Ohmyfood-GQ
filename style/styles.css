@@ -33,13 +33,12 @@ header {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  box-shadow: 0 4px 2px 2px rgba(128, 128, 128, 0.5);
   position: relative;
+  box-shadow: 0 2px 0px 0px rgba(128, 128, 128, 0.5);
 }
 @media screen and (min-width: 992px) {
   header {
     box-shadow: 0 4px 0px 0px rgba(128, 128, 128, 0.5);
-    border: 1px rgba(128, 128, 128, 0.5) solid;
   }
 }
 
@@ -219,7 +218,10 @@ fieldset {
   }
 }
 .fonctionnement__steps:hover {
-  background: #9356dc;
+  background: hsl(267.3134328358deg, 70%, 95%);
+}
+.fonctionnement__steps:hover i {
+  color: #9356dc;
 }
 @media screen and (min-width: 992px) {
   .fonctionnement__steps__lists {
@@ -441,13 +443,12 @@ header {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  box-shadow: 0 4px 2px 2px rgba(128, 128, 128, 0.5);
   position: relative;
+  box-shadow: 0 2px 0px 0px rgba(128, 128, 128, 0.5);
 }
 @media screen and (min-width: 992px) {
   header {
     box-shadow: 0 4px 0px 0px rgba(128, 128, 128, 0.5);
-    border: 1px rgba(128, 128, 128, 0.5) solid;
   }
 }
 

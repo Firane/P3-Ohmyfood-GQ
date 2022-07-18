@@ -1,0 +1,7 @@
+@function brighter-color($color) {
+     $hue: hue($color);
+     $sat: 70%;
+     $light: 95%;
+     $brighter: hsl($hue, $sat, $light);
+     @return $brighter;
+}

@@ -31,7 +31,10 @@
                width: 28%;
           }
           &:hover {
-               background: $color-primary;
+               background: brighter-color($color-primary);
+               & i {
+                    color: $color-primary;
+               }
           }
           &__lists {
                @include desktop {
