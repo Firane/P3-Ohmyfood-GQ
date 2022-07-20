@@ -16,6 +16,12 @@
                flex-direction: row;
                justify-content: space-between;
           }
+          @include tablette {
+               display: flex;
+               flex-direction: row;
+               flex-wrap: wrap;
+               justify-content: space-between;
+          }
      }
      &__img {
           width: 100%;
@@ -25,9 +31,15 @@
                @include desktop {
                     display: block;
                }
+               @include tablette {
+                    display: block;
+               }
           }
           &__mobile {
                @include desktop {
+                    display: none;
+               }
+               @include tablette {
                     display: none;
                }
           }
@@ -44,6 +56,10 @@
           @include desktop {
                justify-content: center;
                column-gap: 6rem;
+          }
+          @include tablette {
+               justify-content: center;
+               column-gap: 4rem;
           }
      }
      &__title {
@@ -77,9 +93,22 @@
                background: $color-tertiary;
                margin-top: 0.2rem;
           }
+          &__desserts {
+               @include tablette {
+                    width: 95%;
+               }
+          }
           &__content {
                @include desktop {
                     width: 30%;
+               }
+               @include tablette {
+                    width: 48%;
+               }
+               &__desserts {
+                    @include tablette {
+                         width: 100%;
+                    }
                }
           }
      }
@@ -96,6 +125,11 @@
                display: flex;
                flex-direction: column;
                margin: 0 auto;
+               &__desserts {
+                    @include tablette {
+                         width: 95%;
+                    }
+               }
           }
           &__clickable {
                text-decoration: none;

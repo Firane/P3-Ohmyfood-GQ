@@ -212,6 +212,11 @@ fieldset {
   font-weight: 700;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .fonctionnement__steps {
+    width: 30%;
+  }
+}
 @media screen and (min-width: 992px) {
   .fonctionnement__steps {
     width: 28%;
@@ -228,6 +233,16 @@ fieldset {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .fonctionnement__steps__lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
 }
 .fonctionnement__steps__numbers {
@@ -310,6 +325,13 @@ fieldset {
     row-gap: 3rem;
   }
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .restaurants__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .restaurants__list__title {
   width: 90%;
   margin: 0 auto;
@@ -343,6 +365,11 @@ fieldset {
 @media screen and (min-width: 992px) {
   .restaurants__main__box {
     width: 23%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .restaurants__main__box {
+    width: 48%;
   }
 }
 .restaurants__location {
@@ -476,6 +503,14 @@ header {
     justify-content: space-between;
   }
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .menu__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .menu__img {
   width: 100%;
   z-index: 1;
@@ -488,7 +523,17 @@ header {
     display: block;
   }
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .menu__img__desktop {
+    display: block;
+  }
+}
 @media screen and (min-width: 992px) {
+  .menu__img__mobile {
+    display: none;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
   .menu__img__mobile {
     display: none;
   }
@@ -508,6 +553,13 @@ header {
     justify-content: center;
     -moz-column-gap: 6rem;
          column-gap: 6rem;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .menu__box__title__heart {
+    justify-content: center;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
   }
 }
 .menu__title {
@@ -557,9 +609,24 @@ header {
   background: #99e2d0;
   margin-top: 0.2rem;
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .menu__steps__desserts {
+    width: 95%;
+  }
+}
 @media screen and (min-width: 992px) {
   .menu__steps__content {
     width: 30%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .menu__steps__content {
+    width: 48%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .menu__steps__content__desserts {
+    width: 100%;
   }
 }
 .menu__dishes {
@@ -576,6 +643,11 @@ header {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .menu__dishes__list__desserts {
+    width: 95%;
+  }
 }
 .menu__dishes__clickable {
   text-decoration: none;
