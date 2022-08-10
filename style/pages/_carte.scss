@@ -144,7 +144,7 @@
                display: flex;
                flex-direction: column;
                margin: 0 auto;
-               animation: fadeIn 1s ease-in-out;
+               animation: fadeIn 1s linear;
                &__desserts {
                     @include tablette {
                          width: 95%;

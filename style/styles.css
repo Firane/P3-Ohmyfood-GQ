@@ -506,7 +506,7 @@ header {
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(1rem);
+    transform: translateY(35px);
   }
   100% {
     opacity: 1;
@@ -516,7 +516,7 @@ header {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(1rem);
+    transform: translateY(35px);
   }
   100% {
     opacity: 1;
@@ -695,8 +695,8 @@ header {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  -webkit-animation: fadeIn 1s ease-in-out;
-          animation: fadeIn 1s ease-in-out;
+  -webkit-animation: fadeIn 1s linear;
+          animation: fadeIn 1s linear;
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .menu__dishes__list__desserts {
