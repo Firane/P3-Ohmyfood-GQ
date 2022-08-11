@@ -5,3 +5,6 @@ $color-background-position: #eaeaea;
 $background-accueil: #f6f6f6;
 $grey-text: #7e7e7e;
 $color-background-footer: #353535;
+$anim-dur: 1000ms;
+$dishes-count: 5;
+$anim-delay: $anim-dur / $dishes-count;
