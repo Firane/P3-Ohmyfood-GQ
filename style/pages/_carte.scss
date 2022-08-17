@@ -132,19 +132,28 @@
           }
      }
      &__dishes {
-          width: 95%;
+          width: 100%;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          flex-direction: row;
+          justify-content: space-between;
           height: 100%;
           margin: 0 auto;
           row-gap: 0.3rem;
+          position: relative;
+          overflow: hidden;
+          &:hover {
+               & div.menu__dishes__checkmark {
+                    animation: displayCheckmark 0.5s both ease-in-out;
+               }
+               & i {
+                    animation: rotationcheckmarkin 0.5s both ease-in-out;
+               }
+          }
           &__list {
                width: 90%;
                display: flex;
                flex-direction: column;
                margin: 0 auto;
-
                &__desserts {
                     @include tablette {
                          width: 95%;
@@ -173,6 +182,7 @@
           &__ingredients {
                font-weight: 300;
                font-size: 0.85rem;
+               text-overflow: ellipsis;
                & strong {
                     font-size: 0.85;
                     font-weight: 400;
@@ -184,6 +194,34 @@
           &__infos {
                display: flex;
                justify-content: space-between;
+               flex-wrap: nowrap;
+          }
+          &__content {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               row-gap: 0.6rem;
+               margin: 0.5rem;
+               width: 100%;
+               text-overflow: ellipsis;
+          }
+          &__checkmark {
+               background: $color-tertiary;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               border-radius: 0px 20px 20px 0px;
+               margin: -0rem -4rem -0rem -0rem;
+               padding: 1rem;
+               animation: fadeoutCheckmark 0.5s both ease-in-out;
+               & i {
+                    background: white;
+                    padding: 0.5rem;
+                    border-radius: 50%;
+                    color: $color-tertiary;
+                    font-size: 1rem;
+                    animation: rotationcheckmarkout 0.5s both ease-in-out;
+               }
           }
      }
 }

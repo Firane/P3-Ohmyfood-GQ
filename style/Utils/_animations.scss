@@ -7,3 +7,47 @@
           opacity: 1;
      }
 }
+
+@keyframes displayCheckmark {
+     100% {
+          margin: 0;
+     }
+}
+
+@keyframes fadeoutCheckmark {
+     from {
+          margin: 0;
+     }
+     to {
+          margin: 0rem -4rem 0rem 0rem;
+     }
+}
+
+@keyframes ianimation {
+     0% {
+          width: 0%;
+     }
+     50% {
+          width: 100%;
+     }
+     0% {
+          width: 0%;
+     }
+}
+
+@keyframes rotationcheckmarkin {
+     from {
+          transform: rotate(500deg);
+     }
+     to {
+          transform: rotate(0deg);
+     }
+}
+@keyframes rotationcheckmarkout {
+     from {
+          transform: rotate(0deg);
+     }
+     to {
+          transform: rotate(500deg);
+     }
+}

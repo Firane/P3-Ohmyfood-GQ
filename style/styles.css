@@ -522,6 +522,86 @@ header {
     opacity: 1;
   }
 }
+@-webkit-keyframes displayCheckmark {
+  100% {
+    margin: 0;
+  }
+}
+@keyframes displayCheckmark {
+  100% {
+    margin: 0;
+  }
+}
+@-webkit-keyframes fadeoutCheckmark {
+  from {
+    margin: 0;
+  }
+  to {
+    margin: 0rem -4rem 0rem 0rem;
+  }
+}
+@keyframes fadeoutCheckmark {
+  from {
+    margin: 0;
+  }
+  to {
+    margin: 0rem -4rem 0rem 0rem;
+  }
+}
+@-webkit-keyframes ianimation {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  0% {
+    width: 0%;
+  }
+}
+@keyframes ianimation {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  0% {
+    width: 0%;
+  }
+}
+@-webkit-keyframes rotationcheckmarkin {
+  from {
+    transform: rotate(500deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotationcheckmarkin {
+  from {
+    transform: rotate(500deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rotationcheckmarkout {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(500deg);
+  }
+}
+@keyframes rotationcheckmarkout {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(500deg);
+  }
+}
 .menu {
   margin-top: -30px;
   z-index: 2;
@@ -682,13 +762,23 @@ header {
   }
 }
 .menu__dishes {
-  width: 95%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   height: 100%;
   margin: 0 auto;
   row-gap: 0.3rem;
+  position: relative;
+  overflow: hidden;
+}
+.menu__dishes:hover div.menu__dishes__checkmark {
+  -webkit-animation: displayCheckmark 0.5s both ease-in-out;
+          animation: displayCheckmark 0.5s both ease-in-out;
+}
+.menu__dishes:hover i {
+  -webkit-animation: rotationcheckmarkin 0.5s both ease-in-out;
+          animation: rotationcheckmarkin 0.5s both ease-in-out;
 }
 .menu__dishes__list {
   width: 90%;
@@ -735,6 +825,7 @@ header {
 .menu__dishes__ingredients {
   font-weight: 300;
   font-size: 0.85rem;
+  text-overflow: ellipsis;
 }
 .menu__dishes__ingredients strong {
   font-size: 0.85;
@@ -746,4 +837,34 @@ header {
 .menu__dishes__infos {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.menu__dishes__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.6rem;
+  margin: 0.5rem;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+.menu__dishes__checkmark {
+  background: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  margin: 0rem -4rem 0rem 0rem;
+  padding: 1rem;
+  -webkit-animation: fadeoutCheckmark 0.5s both ease-in-out;
+          animation: fadeoutCheckmark 0.5s both ease-in-out;
+}
+.menu__dishes__checkmark i {
+  background: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: #99e2d0;
+  font-size: 1rem;
+  -webkit-animation: rotationcheckmarkout 0.5s both ease-in-out;
+          animation: rotationcheckmarkout 0.5s both ease-in-out;
 }/*# sourceMappingURL=styles.css.map */

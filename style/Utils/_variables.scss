@@ -7,4 +7,4 @@ $grey-text: #7e7e7e;
 $color-background-footer: #353535;
 $anim-dur: 1000ms;
 $dishes-count: 5;
-$anim-delay: $anim-dur / $dishes-count;
+$anim-delay: calc($anim-dur / $dishes-count);
