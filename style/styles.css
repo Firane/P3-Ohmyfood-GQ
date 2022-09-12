@@ -548,28 +548,6 @@ header {
     margin: 0rem -4rem 0rem 0rem;
   }
 }
-@-webkit-keyframes ianimation {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 100%;
-  }
-  0% {
-    width: 0%;
-  }
-}
-@keyframes ianimation {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 100%;
-  }
-  0% {
-    width: 0%;
-  }
-}
 @-webkit-keyframes rotationcheckmarkin {
   from {
     transform: rotate(500deg);
@@ -771,6 +749,8 @@ header {
   row-gap: 0.3rem;
   position: relative;
   overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0px 20px 20px 0px;
 }
 .menu__dishes:hover div.menu__dishes__checkmark {
   -webkit-animation: displayCheckmark 0.5s both ease-in-out;
@@ -825,7 +805,6 @@ header {
 .menu__dishes__ingredients {
   font-weight: 300;
   font-size: 0.85rem;
-  text-overflow: ellipsis;
 }
 .menu__dishes__ingredients strong {
   font-size: 0.85;
@@ -846,7 +825,6 @@ header {
   row-gap: 0.6rem;
   margin: 0.5rem;
   width: 100%;
-  text-overflow: ellipsis;
 }
 .menu__dishes__checkmark {
   background: #99e2d0;

@@ -141,6 +141,8 @@
           row-gap: 0.3rem;
           position: relative;
           overflow: hidden;
+          text-overflow: ellipsis;
+          border-radius: 0px 20px 20px 0px;
           &:hover {
                & div.menu__dishes__checkmark {
                     animation: displayCheckmark 0.5s both ease-in-out;
@@ -182,7 +184,6 @@
           &__ingredients {
                font-weight: 300;
                font-size: 0.85rem;
-               text-overflow: ellipsis;
                & strong {
                     font-size: 0.85;
                     font-weight: 400;
@@ -203,7 +204,6 @@
                row-gap: 0.6rem;
                margin: 0.5rem;
                width: 100%;
-               text-overflow: ellipsis;
           }
           &__checkmark {
                background: $color-tertiary;
