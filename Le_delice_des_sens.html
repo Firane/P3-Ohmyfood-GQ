@@ -20,13 +20,13 @@
                <section class="menu">
                     <div class="menu__box__title__heart">
                          <h1 class="menu__title">Le délice des sens</h1>
-                         <a href="" class="menu__like__buttons"><i class="fa-solid fa-heart menu__title__icons"></i></a>
+                         <a href="#fa-heart" class="menu__like__buttons" id="fa-heart"><i class="fa-solid fa-heart menu__title__icons"></i></a>
                     </div>
                     <div class="menu__content">
                          <div class="menu__steps__content">
-                              <h2 class="menu__steps">Entrées</h2>
+                              <h2 class="menu__steps" id="menu__steps__entree">Entrées</h2>
                               <div class="menu__dishes__list">
-                                   <a class="menu__dishes__clickable menu__dishes__clickable--1" href="http://google.com">
+                                   <a class="menu__dishes__clickable menu__dishes__clickable--1" href="#menu__steps__entree">
                                         <article class="menu__dishes menu__dishes--1">
                                              <div class="menu__dishes__content">
                                                   <h3 class="menu__dishes__title">Tartare de thon</h3>
@@ -38,7 +38,7 @@
                                              <div class="menu__dishes__checkmark"><i class="fa-solid fa-check"></i></div>
                                         </article>
                                    </a>
-                                   <a class="menu__dishes__clickable menu__dishes__clickable--2" href="http://google.com">
+                                   <a class="menu__dishes__clickable menu__dishes__clickable--2" href="#menu__steps__entree">
                                         <article class="menu__dishes menu__dishes--2">
                                              <div class="menu__dishes__content">
                                                   <h3 class="menu__dishes__title">Bouchée de homard croustillant</h3>
@@ -50,7 +50,7 @@
                                              <div class="menu__dishes__checkmark"><i class="fa-solid fa-check"></i></div>
                                         </article>
                                    </a>
-                                   <a class="menu__dishes__clickable menu__dishes__clickable--3" href="http://google.com">
+                                   <a class="menu__dishes__clickable menu__dishes__clickable--3" href="#menu__steps__entree">
                                         <article class="menu__dishes menu__dishes--3">
                                              <div class="menu__dishes__content">
                                                   <h3 class="menu__dishes__title">Velouté de cèpes</h3>
@@ -65,9 +65,9 @@
                               </div>
                          </div>
                          <div class="menu__steps__content">
-                              <h2 class="menu__steps">Plats</h2>
+                              <h2 class="menu__steps" id="menu__steps__dish">Plats</h2>
                               <div class="menu__dishes__list">
-                                   <a class="menu__dishes__clickable menu__dishes__clickable--1" href="http://google.com">
+                                   <a class="menu__dishes__clickable menu__dishes__clickable--1" href="#menu__steps__dish">
                                         <article class="menu__dishes menu__dishes--1">
                                              <div class="menu__dishes__content">
                                                   <h3 class="menu__dishes__title">Poulet rôti aux herbes de provence</h3>
@@ -79,7 +79,7 @@
                                              <div class="menu__dishes__checkmark"><i class="fa-solid fa-check"></i></div>
                                         </article>
                                    </a>
-                                   <div class="menu__dishes__clickable menu__dishes__clickable--2">
+                                   <a class="menu__dishes__clickable menu__dishes__clickable--2" href="#menu__steps__dish">
                                         <article class="menu__dishes menu__dishes--2">
                                              <div class="menu__dishes__content">
                                                   <h3 class="menu__dishes__title">Langouste rôtie</h3>
@@ -90,8 +90,8 @@
                                              </div>
                                              <div class="menu__dishes__checkmark"><i class="fa-solid fa-check"></i></div>
                                         </article>
-                                   </div>
-                                   <a class="menu__dishes__clickable menu__dishes__clickable--3" href="http://google.com">
+                                   </a>
+                                   <a class="menu__dishes__clickable menu__dishes__clickable--3" href="#menu__steps__dish">
                                         <article class="menu__dishes menu__dishes--3">
                                              <div class="menu__dishes__content">
                                                   <h3 class="menu__dishes__title">Côte de boeuf angus</h3>
@@ -106,9 +106,9 @@
                               </div>
                          </div>
                          <div class="menu__steps__content menu__steps__content__desserts">
-                              <h2 class="menu__steps menu__steps__desserts">Desserts</h2>
+                              <h2 class="menu__steps menu__steps__desserts" id="menu__steps__dessert">Desserts</h2>
                               <div class="menu__dishes__list menu__dishes__list__desserts">
-                                   <a class="menu__dishes__clickable menu__dishes__clickable--1" href="http://google.com">
+                                   <a class="menu__dishes__clickable menu__dishes__clickable--1" href="#menu__steps__dessert">
                                         <article class="menu__dishes menu__dishes--1">
                                              <div class="menu__dishes__content">
                                                   <h3 class="menu__dishes__title">Farandole de desserts</h3>
@@ -120,7 +120,7 @@
                                              <div class="menu__dishes__checkmark"><i class="fa-solid fa-check"></i></div>
                                         </article>
                                    </a>
-                                   <a class="menu__dishes__clickable menu__dishes__clickable--2" href="http://google.com">
+                                   <a class="menu__dishes__clickable menu__dishes__clickable--2" href="#menu__steps__dessert">
                                         <article class="menu__dishes menu__dishes--2">
                                              <div class="menu__dishes__content">
                                                   <h3 class="menu__dishes__title">Crème brulée</h3>
@@ -132,7 +132,7 @@
                                              <div class="menu__dishes__checkmark"><i class="fa-solid fa-check"></i></div>
                                         </article>
                                    </a>
-                                   <a class="menu__dishes__clickable menu__dishes__clickable--3" href="http://google.com">
+                                   <a class="menu__dishes__clickable menu__dishes__clickable--3" href="#menu__steps__dessert">
                                         <article class="menu__dishes menu__dishes--3">
                                              <div class="menu__dishes__content">
                                                   <h3 class="menu__dishes__title">Tiramisu</h3>
@@ -147,7 +147,7 @@
                               </div>
                          </div>
                     </div>
-                    <form action="https://www.google.com"><button class="menu__button gradiented__button" type="submit">Commander</button></form>
+                    <form id="command" action="#command"><button class="menu__button gradiented__button" type="submit">Commander</button></form>
                </section>
           </main>
           <footer>
