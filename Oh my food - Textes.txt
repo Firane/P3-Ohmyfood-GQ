@@ -3,42 +3,42 @@
 Entrées
 Fricassée d'escargot
 Au piment d'Espelette 
-25€
+25&euro;
 
 Foie gras de canard mi-cuit
 Et ses copeaux de truffe noire
-35€
+35&euro;
 
 Oeuf au plat
 Assaisonné à la truffe sur lit de caviar
-20€
+20&euro;
 
 
 Plats
 Filet de boeuf aux herbes
 Accompagné de sa ribambelle de légumes
-40€
+40&euro;
 
 Parmentier de queue de boeuf
 À la truffe noire sur sa purée de panais
-35€
+35&euro;
 
 Filet de turbot
 Aux agrumes
-44€
+44&euro;
         
 Desserts
 Paris-Brest
 Revisité
-18€
+18&euro;
 
 Macaron au chocolat d'exception 
 Et glace à la vanille de Madagascar
-22€
+22&euro;
 
 Mousse au chocolat 
 Au piment d'Espelette et à la truffe noire
-23€  
+23&euro;  
   
 ---     
 
@@ -47,41 +47,41 @@ Le délice des sens
 Entrées
 Tartare de thon
 Assaisonné au yuzu
-25€
+25&euro;
 
 Bouchée de homard croustillant 
 Et sa farandole de petits légumes
-35€
+35&euro;
 
 Velouté de cèpes 
 Aux truffes
-20€
+20&euro;
         
 Plats
 Poulet rôti aux herbes de Provence 
 Et sa crème de truffe
-40€
+40&euro;
 
 Langouste rôtie 
 Et ses légumes de saison
-35€
+35&euro;
 
 Côte de boeuf Angus 
 Et sa purée de panais
-44€
+44&euro;
 
 Desserts
 Farandole de desserts
 Du chef
-18€
+18&euro;
 
 Crème brulée 
 Revisitée
-22€
+22&euro;
 
 Tiramisu 
 À la noisette
-23€
+23&euro;
 
 ---
 
@@ -90,45 +90,45 @@ La note enchantée
 Entrées
 Ravioles de foie gras 
 Accompagnés de leur crème à la truffe
-25€
+25&euro;
 
 Caviar osciètre 
 Sur blini à la farine de blé noir
-35€
+35&euro;
 
 Homard et espuma de potiron
 Mariné aux zestes d'orange
-20€
+20&euro;
 
 Foie gras de canard cuit entier
 Confiture de figue et pain toasté
-35€
+35&euro;
         
 Plats
 Noix de coquilles Saint-Jacques
 Sur lit de purée de céleri-rave
-40€
+40&euro;
 
 Langoustine poêlée
 Purée de patate douce
-35€
+35&euro;
 
 Mijoté de queue de boeuf 
 Et riz sauvage aux zestes de citron
-44€
+44&euro;
 
 Desserts
 Macaron noisette et chocolat
 Glace au caramel brun et sel de Guérande
-18€
+18&euro;
 
 Baba au rhum revisité 
 Avec son coulis de citron
-22€
+22&euro;
 
 Tarte au citron meringuée 
 Déstructurée
-23€
+23&euro;
 
 ---
 
@@ -137,38 +137,38 @@ Déstructurée
 Entrées
 Tartare de poulpe acidulé
 Aux zestes d'orange
-25€
+25&euro;
 
 Velouté de légumes d'antan
 Carotte, panais, topinambour
-35€
+35&euro;
 
 Soupe à l'oignon
 Revisitée
-20€
+20&euro;
 
 Plats
 Coquilles Saint-Jacques
 Accompagnées d'une purée de panais
-40€
+40&euro;
 
 Magret de canard
 Et parmentier de pommes de terre
-35€
+35&euro;
 
 Pigeonneau d’Ille-et-Vilaine
 Sur son lit de gnocchis aux légumes
-44€
+44&euro;
 
 Desserts
 Pétales de violettes glacés
 Et purée de noisettes
-18€
+18&euro;
 
 Fondant au chocolat
 Revisité
-22€
+22&euro;
 
 Millefeuille croustillant
 Myrtilles et pâte d’amande
-23€
+23&euro;
