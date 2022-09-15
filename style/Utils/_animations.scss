@@ -1,3 +1,16 @@
+@-webkit-keyframes fadeInBody {
+     0% {
+          opacity: 0;
+     }
+
+     80% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 100%;
+     }
+}
+
 @keyframes fadeInBody {
      0% {
           opacity: 0;
@@ -11,6 +24,16 @@
      }
 }
 
+@-webkit-keyframes fadeInMenu {
+     0% {
+          opacity: 0;
+          transform: translateY(35px);
+     }
+     100% {
+          opacity: 1;
+     }
+}
+
 @keyframes fadeInMenu {
      0% {
           opacity: 0;
@@ -21,9 +44,24 @@
      }
 }
 
+@-webkit-keyframes displayCheckmark {
+     100% {
+          margin: 0;
+     }
+}
+
 @keyframes displayCheckmark {
      100% {
           margin: 0;
+     }
+}
+
+@-webkit-keyframes fadeoutCheckmark {
+     from {
+          margin: 0;
+     }
+     to {
+          margin: 0rem -4rem 0rem 0rem;
      }
 }
 
@@ -36,6 +74,15 @@
      }
 }
 
+@-webkit-keyframes rotationcheckmarkin {
+     from {
+          transform: rotate(500deg);
+     }
+     to {
+          transform: rotate(0deg);
+     }
+}
+
 @keyframes rotationcheckmarkin {
      from {
           transform: rotate(500deg);
@@ -44,12 +91,32 @@
           transform: rotate(0deg);
      }
 }
+@-webkit-keyframes rotationcheckmarkout {
+     from {
+          transform: rotate(0deg);
+     }
+     to {
+          transform: rotate(500deg);
+     }
+}
 @keyframes rotationcheckmarkout {
      from {
           transform: rotate(0deg);
      }
      to {
           transform: rotate(500deg);
+     }
+}
+
+@-webkit-keyframes pacman {
+     0% {
+          transform: scale(1);
+     }
+     50% {
+          transform: scale(0);
+     }
+     100% {
+          transform: scale(1);
      }
 }
 
@@ -65,12 +132,33 @@
      }
 }
 
+@-webkit-keyframes pacmanmoves {
+     from {
+          transform: translateX(-30%);
+     }
+     to {
+          transform: translateX(120%);
+     }
+}
+
 @keyframes pacmanmoves {
      from {
           transform: translateX(-30%);
      }
      to {
           transform: translateX(120%);
+     }
+}
+
+@-webkit-keyframes eaten {
+     0% {
+          opacity: 1;
+     }
+     99% {
+          opacity: 1;
+     }
+     100% {
+          opacity: 0;
      }
 }
 
@@ -83,6 +171,15 @@
      }
      100% {
           opacity: 0;
+     }
+}
+
+@-webkit-keyframes loaderDisapear {
+     from {
+          transform: scale(1);
+     }
+     to {
+          transform: scale(0);
      }
 }
 

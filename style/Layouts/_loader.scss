@@ -18,11 +18,13 @@
           position: absolute;
           width: 100%;
           z-index: 1001;
+          -webkit-animation: loaderDisapear 10ms linear forwards 2.8s;
           animation: loaderDisapear 10ms linear forwards 2.8s;
           transform-origin: right;
           &__full {
                display: flex;
                position: relative;
+               -webkit-animation: pacmanmoves 3s forwards ease-in-out;
                animation: pacmanmoves 3s forwards ease-in-out;
                z-index: 1001;
           }
@@ -52,6 +54,7 @@
                z-index: 1001;
                position: absolute;
                left: 26px;
+               -webkit-animation: pacman 0.5s both ease-in-out infinite;
                animation: pacman 0.5s both ease-in-out infinite;
                @include tablette {
                     border-right: 91px solid white;
@@ -76,6 +79,7 @@
      height: 100vh;
      inset: 0;
      background: white;
+     -webkit-animation: loaderDisapear 1ms linear forwards 3s;
      animation: loaderDisapear 1ms linear forwards 3s;
      transform-origin: top;
 }
