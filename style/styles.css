@@ -3,6 +3,180 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@-webkit-keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes displayCheckmark {
+  100% {
+    margin: 0;
+  }
+}
+@keyframes displayCheckmark {
+  100% {
+    margin: 0;
+  }
+}
+@-webkit-keyframes fadeoutCheckmark {
+  from {
+    margin: 0;
+  }
+  to {
+    margin: 0rem -4rem 0rem 0rem;
+  }
+}
+@keyframes fadeoutCheckmark {
+  from {
+    margin: 0;
+  }
+  to {
+    margin: 0rem -4rem 0rem 0rem;
+  }
+}
+@-webkit-keyframes rotationcheckmarkin {
+  from {
+    transform: rotate(500deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotationcheckmarkin {
+  from {
+    transform: rotate(500deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rotationcheckmarkout {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(500deg);
+  }
+}
+@keyframes rotationcheckmarkout {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(500deg);
+  }
+}
+@-webkit-keyframes pacman {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pacman {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes pacmanmoves {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+@keyframes pacmanmoves {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+@-webkit-keyframes eaten {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes eaten {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes loaderDisapear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes loaderDisapear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -11,6 +185,7 @@
 body {
   margin: 0 auto;
   max-width: 1500px;
+  background: white;
 }
 
 h1,
@@ -51,6 +226,93 @@ header {
   font-size: 1.3rem;
 }
 
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes displayCheckmark {
+  100% {
+    margin: 0;
+  }
+}
+@keyframes fadeoutCheckmark {
+  from {
+    margin: 0;
+  }
+  to {
+    margin: 0rem -4rem 0rem 0rem;
+  }
+}
+@keyframes rotationcheckmarkin {
+  from {
+    transform: rotate(500deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotationcheckmarkout {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(500deg);
+  }
+}
+@keyframes pacman {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pacmanmoves {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+@keyframes eaten {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loaderDisapear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -59,6 +321,7 @@ header {
 body {
   margin: 0 auto;
   max-width: 1500px;
+  background: white;
 }
 
 h1,
@@ -88,6 +351,93 @@ fieldset {
   color: #353535;
 }
 
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes displayCheckmark {
+  100% {
+    margin: 0;
+  }
+}
+@keyframes fadeoutCheckmark {
+  from {
+    margin: 0;
+  }
+  to {
+    margin: 0rem -4rem 0rem 0rem;
+  }
+}
+@keyframes rotationcheckmarkin {
+  from {
+    transform: rotate(500deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotationcheckmarkout {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(500deg);
+  }
+}
+@keyframes pacman {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pacmanmoves {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+@keyframes eaten {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loaderDisapear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -96,6 +446,7 @@ fieldset {
 body {
   margin: 0 auto;
   max-width: 1500px;
+  background: white;
 }
 
 h1,
@@ -160,6 +511,93 @@ fieldset {
   cursor: pointer;
 }
 
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes displayCheckmark {
+  100% {
+    margin: 0;
+  }
+}
+@keyframes fadeoutCheckmark {
+  from {
+    margin: 0;
+  }
+  to {
+    margin: 0rem -4rem 0rem 0rem;
+  }
+}
+@keyframes rotationcheckmarkin {
+  from {
+    transform: rotate(500deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotationcheckmarkout {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(500deg);
+  }
+}
+@keyframes pacman {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pacmanmoves {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+@keyframes eaten {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loaderDisapear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -168,6 +606,7 @@ fieldset {
 body {
   margin: 0 auto;
   max-width: 1500px;
+  background: white;
 }
 
 h1,
@@ -271,6 +710,93 @@ fieldset {
   font-weight: 500;
 }
 
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes displayCheckmark {
+  100% {
+    margin: 0;
+  }
+}
+@keyframes fadeoutCheckmark {
+  from {
+    margin: 0;
+  }
+  to {
+    margin: 0rem -4rem 0rem 0rem;
+  }
+}
+@keyframes rotationcheckmarkin {
+  from {
+    transform: rotate(500deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotationcheckmarkout {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(500deg);
+  }
+}
+@keyframes pacman {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pacmanmoves {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+@keyframes eaten {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loaderDisapear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -279,6 +805,7 @@ fieldset {
 body {
   margin: 0 auto;
   max-width: 1500px;
+  background: white;
 }
 
 h1,
@@ -503,41 +1030,29 @@ header {
   font-size: 1.3rem;
 }
 
-@-webkit-keyframes fadeIn {
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeInMenu {
   0% {
     opacity: 0;
     transform: translateY(35px);
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(35px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes displayCheckmark {
-  100% {
-    margin: 0;
   }
 }
 @keyframes displayCheckmark {
   100% {
     margin: 0;
-  }
-}
-@-webkit-keyframes fadeoutCheckmark {
-  from {
-    margin: 0;
-  }
-  to {
-    margin: 0rem -4rem 0rem 0rem;
   }
 }
 @keyframes fadeoutCheckmark {
@@ -548,14 +1063,6 @@ header {
     margin: 0rem -4rem 0rem 0rem;
   }
 }
-@-webkit-keyframes rotationcheckmarkin {
-  from {
-    transform: rotate(500deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
 @keyframes rotationcheckmarkin {
   from {
     transform: rotate(500deg);
@@ -564,7 +1071,7 @@ header {
     transform: rotate(0deg);
   }
 }
-@-webkit-keyframes rotationcheckmarkout {
+@keyframes rotationcheckmarkout {
   from {
     transform: rotate(0deg);
   }
@@ -572,12 +1079,42 @@ header {
     transform: rotate(500deg);
   }
 }
-@keyframes rotationcheckmarkout {
+@keyframes pacman {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pacmanmoves {
   from {
-    transform: rotate(0deg);
+    transform: translateX(-30%);
   }
   to {
-    transform: rotate(500deg);
+    transform: translateX(120%);
+  }
+}
+@keyframes eaten {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loaderDisapear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
   }
 }
 .menu {
@@ -779,8 +1316,8 @@ header {
   height: 70px;
   border-radius: 20px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-  -webkit-animation: fadeIn 1000ms linear both;
-          animation: fadeIn 1000ms linear both;
+  -webkit-animation: fadeInMenu 1000ms linear both;
+          animation: fadeInMenu 1000ms linear both;
 }
 .menu__dishes__clickable--1 {
   -webkit-animation-delay: 200ms;
@@ -845,4 +1382,181 @@ header {
   font-size: 1rem;
   -webkit-animation: rotationcheckmarkout 0.5s both ease-in-out;
           animation: rotationcheckmarkout 0.5s both ease-in-out;
+}
+
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes displayCheckmark {
+  100% {
+    margin: 0;
+  }
+}
+@keyframes fadeoutCheckmark {
+  from {
+    margin: 0;
+  }
+  to {
+    margin: 0rem -4rem 0rem 0rem;
+  }
+}
+@keyframes rotationcheckmarkin {
+  from {
+    transform: rotate(500deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotationcheckmarkout {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(500deg);
+  }
+}
+@keyframes pacman {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pacmanmoves {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+@keyframes eaten {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loaderDisapear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+.loader {
+  position: relative;
+  top: 40%;
+}
+.loader__title__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.loader__title__container__text {
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+}
+.loader__pacman {
+  position: absolute;
+  width: 100%;
+  z-index: 1001;
+  -webkit-animation: loaderDisapear 10ms linear forwards 2.8s;
+          animation: loaderDisapear 10ms linear forwards 2.8s;
+  transform-origin: right;
+}
+.loader__pacman__full {
+  display: flex;
+  position: relative;
+  -webkit-animation: pacmanmoves 3s forwards ease-in-out;
+          animation: pacmanmoves 3s forwards ease-in-out;
+  z-index: 1001;
+}
+.loader__pacman__circle {
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  z-index: 1001;
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .loader__pacman__circle {
+    height: 90px;
+    width: 90px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .loader__pacman__circle {
+    height: 120px;
+    width: 120px;
+  }
+}
+.loader__pacman__triangle {
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-top-width: 30px;
+  border-bottom-width: 30px;
+  border-right: 61px solid white;
+  border-radius: 0px 50% 50% 0px;
+  z-index: 1001;
+  position: absolute;
+  left: 32px;
+  -webkit-animation: pacman 0.5s both ease-in-out infinite;
+          animation: pacman 0.5s both ease-in-out infinite;
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .loader__pacman__triangle {
+    border-right: 91px solid white;
+    border-top-width: 45px;
+    border-bottom-width: 45px;
+    left: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .loader__pacman__triangle {
+    border-right: 121px solid white;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    left: 55px;
+  }
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  background: white;
+  -webkit-animation: loaderDisapear 1ms linear forwards 3s;
+          animation: loaderDisapear 1ms linear forwards 3s;
+  transform-origin: top;
 }/*# sourceMappingURL=styles.css.map */

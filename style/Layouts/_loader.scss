@@ -1,0 +1,81 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/animations";
+
+.loader {
+     position: relative;
+     top: 40%;
+     &__title__container {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          &__text {
+               @include font-secondary;
+               font-size: 2rem;
+          }
+     }
+     &__pacman {
+          position: absolute;
+          width: 100%;
+          z-index: 1001;
+          animation: loaderDisapear 10ms linear forwards 2.8s;
+          transform-origin: right;
+          &__full {
+               display: flex;
+               position: relative;
+               animation: pacmanmoves 3s forwards ease-in-out;
+               z-index: 1001;
+          }
+          &__circle {
+               background: linear-gradient(to bottom, $color-secondary, $color-primary);
+               height: 60px;
+               width: 60px;
+               border-radius: 50%;
+               z-index: 1001;
+               @include tablette {
+                    height: 90px;
+                    width: 90px;
+               }
+               @include desktop {
+                    height: 120px;
+                    width: 120px;
+               }
+          }
+          &__triangle {
+               width: 0;
+               height: 0;
+               border: 0 solid transparent;
+               border-top-width: 30px;
+               border-bottom-width: 30px;
+               border-right: 61px solid white;
+               border-radius: 0px 50% 50% 0px;
+               z-index: 1001;
+               position: absolute;
+               left: 32px;
+               animation: pacman 0.5s both ease-in-out infinite;
+               @include tablette {
+                    border-right: 91px solid white;
+                    border-top-width: 45px;
+                    border-bottom-width: 45px;
+                    left: 40px;
+               }
+               @include desktop {
+                    border-right: 121px solid white;
+                    border-top-width: 60px;
+                    border-bottom-width: 60px;
+                    left: 55px;
+               }
+          }
+     }
+}
+
+.fixed {
+     position: fixed;
+     z-index: 1000;
+     width: 100vw;
+     height: 100vh;
+     inset: 0;
+     background: white;
+     animation: loaderDisapear 1ms linear forwards 3s;
+     transform-origin: top;
+}

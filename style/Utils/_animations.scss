@@ -1,4 +1,17 @@
-@keyframes fadeIn {
+@keyframes fadeInBody {
+     0% {
+          opacity: 0;
+     }
+
+     80% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 100%;
+     }
+}
+
+@keyframes fadeInMenu {
      0% {
           opacity: 0;
           transform: translateY(35px);
@@ -37,5 +50,47 @@
      }
      to {
           transform: rotate(500deg);
+     }
+}
+
+@keyframes pacman {
+     0% {
+          transform: scale(1);
+     }
+     50% {
+          transform: scale(0);
+     }
+     100% {
+          transform: scale(1);
+     }
+}
+
+@keyframes pacmanmoves {
+     from {
+          transform: translateX(-30%);
+     }
+     to {
+          transform: translateX(120%);
+     }
+}
+
+@keyframes eaten {
+     0% {
+          opacity: 1;
+     }
+     99% {
+          opacity: 1;
+     }
+     100% {
+          opacity: 0;
+     }
+}
+
+@keyframes loaderDisapear {
+     from {
+          transform: scale(1);
+     }
+     to {
+          transform: scale(0);
      }
 }

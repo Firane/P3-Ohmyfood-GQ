@@ -170,7 +170,7 @@
                height: 70px;
                border-radius: 20px;
                @include box-shadow-cards;
-               animation: fadeIn $anim-dur linear both;
+               animation: fadeInMenu $anim-dur linear both;
                @for $i from 1 to $dishes-count {
                     &--#{$i} {
                          animation-delay: $anim-delay * $i;

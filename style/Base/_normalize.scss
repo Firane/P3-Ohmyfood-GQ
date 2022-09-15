@@ -1,5 +1,6 @@
 @import "../Utils/variables";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import "../Utils/animations";
 * {
      box-sizing: border-box;
      font-family: "Roboto", sans-serif;
@@ -8,6 +9,7 @@
 body {
      margin: 0 auto;
      max-width: 1500px;
+     background: white;
 }
 
 h1,
