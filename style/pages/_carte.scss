@@ -186,10 +186,16 @@
           &__title {
                font-weight: 500;
                font-size: 1.1rem;
+               white-space:nowrap;
+               overflow:hidden;
+               text-overflow:ellipsis;
           }
           &__ingredients {
                font-weight: 300;
                font-size: 0.85rem;
+               white-space:nowrap;
+               overflow:hidden;
+               text-overflow:ellipsis;
                & strong {
                     font-size: 0.95rem;
                     font-weight: 400;
@@ -210,6 +216,9 @@
                row-gap: 0.6rem;
                margin: 0.5rem;
                width: 100%;
+               white-space: nowrap;
+               overflow: hidden;
+               text-overflow: ellipsis;
           }
           &__checkmark {
                background: $color-tertiary;
