@@ -1,3 +1,5 @@
+@import "../Utils/variables";
+
 @function brighter-color($color) {
      $hue: hue($color);
      $sat: 70%;

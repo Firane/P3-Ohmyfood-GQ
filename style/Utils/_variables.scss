@@ -8,3 +8,4 @@ $color-background-footer: #353535;
 $anim-dur: 1000ms;
 $dishes-count: 5;
 $anim-delay: calc($anim-dur / $dishes-count);
+$gradient: linear-gradient(to bottom, $color-secondary, $color-primary);
