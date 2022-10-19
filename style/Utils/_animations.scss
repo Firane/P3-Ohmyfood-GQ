@@ -191,3 +191,9 @@
           transform: scale(0);
      }
 }
+
+@keyframes fillerHearth {
+     100% {
+          background-position: 0 -50px;
+     }
+}

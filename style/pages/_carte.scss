@@ -71,16 +71,17 @@
           font-weight: 200;
           &__icons {
                font-size: 1.3rem;
-               color: transparent;
                -webkit-text-stroke-width: 1px;
                -webkit-text-stroke-color: black;
-               &:hover {
-                    -webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: transparent;
-                    background: linear-gradient(to top right, $color-secondary, $color-primary);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    color: transparent;
+               -webkit-text-fill-color: transparent;
+               background: linear-gradient(to top right, $color-secondary, $color-primary);
+               background-repeat: no-repeat;
+               color: transparent;
+               background-size: 0%;
+               transition: background-size 1s ease-in;
+               background-clip: text;
+               &:active {
+                    background-size: 100%;
                }
           }
      }
